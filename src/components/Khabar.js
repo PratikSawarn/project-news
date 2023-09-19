@@ -40,7 +40,7 @@ const Khabar=(props)=> {
         <div className='container my-3'>
             <h2>Top - Headlines</h2>
             <div className='row'>
-                {articles.map((element)=>{
+                {articles?.map((element)=>{
                     return <div className='col-md-4' key={element.url}>
                     <NewsItem title={element.title} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url}/>
                     </div>
